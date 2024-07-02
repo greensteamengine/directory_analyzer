@@ -1,4 +1,4 @@
-def print_directory_structure(root_node):
+def print_dir(root_node):
     for node, depth in root_node.subtree_iterator(include_depth=True):
         print_sequence = "   " * depth + f"{node.name}"
         if node.size is not None:
