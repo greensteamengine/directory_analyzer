@@ -52,14 +52,7 @@ def draw_directory_structure(canvas, dir_structure, x, y, depth=0, max_depth=Non
     return y
 
 
-def print_directory_structure(dir_structure):
 
-    def _print_dir_structure(dir_substructure, depth=0):
-        for key, value in dir_substructure.items():
-            print("   " * depth + key)
-            _print_dir_structure(value, depth + 1)
-
-    _print_dir_structure(dir_structure)
 
 
 def visualize_directory(rootdir, max_depth=None):
